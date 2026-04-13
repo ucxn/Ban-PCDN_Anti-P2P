@@ -38,6 +38,12 @@
 
 > <span style="color:#7F8C8D;">*小贴士：能在应用层解决的问题（比如用“李跳跳”去广告），就不要在三层网络层折腾。手机端看 B站建议直接上第三方客户端（如 PiliPlus），电脑端永远只用 Web 网页版并配合篡改猴插件！*</span>
 
+**推荐插件**：WebRTC Control，Global Speed，B站ACG助手，pakku弹幕过滤
+
+Make bilibili Great Again，BiliBili 高级倍速功能，【哔哩哔哩】屏蔽视频PCDN地址，Bilibili Evolved (Preview)，更好的哔哩哔哩
+
+bilibili播放视频倍速可随意拖动 1x-4x 手动输入/滑块控制/微调按钮，哔哩哔哩网页版显示 IP 属地 B站 Bilibili IP 属地显示
+
 #### 2. Hosts 沉洞与精准 IP 路由 (`Hosts.csv`)
 将已知的流氓调度节点直接指向回环地址或无效地址：
 * 拦截 `ppio.cloud`, `yfcdn.net`, `onethingpcs.com` 等重灾区，强制解析至 `127.114.9.80` 或 `0.0.0.0`。
