@@ -1,9 +1,13 @@
 # Ban-PCDN_Anti-P2P
-光复网路计划 (China-PCDN-Rules) 防止流氓软件偷走你的宽带上行！本项目致力于收集、整理和维护国内各大互联网厂商（如爱优腾、B站、抖音快手百度等）用于 P/M/HCDN  偷跑上行的域名、IP 和特征词。通过在网关、DNS 或防火墙层面进行拦截，彻底阻断恶意 P2P 流量，保障家庭核心网络的稳定，避免因异常上行被运营商限速或封号。方便宽带网络爱好者使用。Network Liberation Plan" is a specialized collection of rules designed to stop mainstream apps from "stealing" your home's upload bandwidth. QQ交流群：680464365，原创：哥哥科技
+光复网路计画 (Cn-PCDN-Rules) 防止流氓软件偷走你的宽带上行！本项目致力于搜集国内各大互联网厂商（如爱优腾、B站、抖音快手百度等）用于 P/M/HCDN  偷跑上行的域名、IP 和特征词。通过在网关、DNS 或防火墙层面进行拦截，彻底阻断恶意 P2P 流量，保障家庭核心网络的稳定，避免因异常上行被运营商限速或封号。方便宽带网络爱好者使用。
+
+“Network Liberation Plan" is a specialized collection of rules designed to stop mainstream apps from "stealing" your home's upload bandwidth.
+
+<div style="border-top: 1px solid #d0d7de; margin: 24px 0;"></div>
 
 <div align="center">
   <h1><span style="color:#C0392B; font-weight:bold;">🌐 光复网络计划 (Network Restoration Project)</span></h1>
-  <p>防止流氓软件偷走你的宽带上行！拒绝被白嫖，捍卫物理 BRAS 与公网 IP 的绝对主权。</p>
+  <p>防止流氓软件偷走你的宽带上行！拒绝被白嫖，捍卫物理 BRAS 与公网 IP 的主权。</p>
   <p>
     作者：<b>哥哥科技</b> 
     (<a href="https://space.bilibili.com/501430041/" style="color:#FB7299; text-decoration:none;">B站</a> · 
