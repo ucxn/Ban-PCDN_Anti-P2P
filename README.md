@@ -16,7 +16,7 @@
     &nbsp;|&nbsp; 
     QQ 交流群：<a href="https://qun.qq.com/universal-share/share?ac=1&authKey=%2FWJ%2F4NS6lNp1cyU2a1kUo%2F%2FEfq8vD6q7SXUux2UosjZ%2BialqZVNe%2Bk3w1YoOUR3b&busi_data=eyJncm91cENvZGUiOiI2ODA0NjQzNjUiLCJ0b2tlbiI6IkI5ZHVYaHJnSGlZZEpzSkRhamdOZFZaNy9aZFJ1L1JwNGpZYWNJWTJJRThGYjBoVjN6RUxhUkcvV0h4eHBwV2siLCJ1aW4iOiIxNTIwMDg1MjQ5In0%3D&data=iHLL1DGOGIhddoSRjGmI9D2bMbNLa4vwx5YfZQAzvPM0sAuYo67cPN4265_UAPSpbgqWLVl8vmWBZVREf_Qg-g&svctype=4&tempid=h5_group_info" style="color:#1296db; text-decoration:none;">680464365</a> 
     &nbsp;|&nbsp; 
-    最新版本：v4.2.1 (2026.04.13)
+    最新版本：v4.2.2r (2026.04.22)
   </p>
 </div>
 
@@ -76,9 +76,9 @@ bilibili播放视频倍速可随意拖动 1x-4x 手动输入/滑块控制/微调
 
 ---
 
-### <span style="color:#2C3E50;">🔄 更新日志 (v4.2.1 - 2026.04.13 21H UTC+8)</span>
+### <span style="color:#2C3E50;">🔄 更新日志 (2026.04.22 18H UTC+8)</span>
 
-* **第 16 次修正**：根据群友与长辈反馈，基于多端设备测试反馈，回调了上个版本中过于激进的自用拦截策略。
+* **第 17 次修正**：根据群友与长辈反馈，基于多端设备测试反馈，回调了上个版本中过于激进的自用拦截策略。
 * 通过 PCAPdroid 对移动端应用进行了重新嗅探抓包，大幅降低了常规软件的网络卡顿率。
 * 优化了分类色彩逻辑：目前所有激进部分均已用黄色标出。
 * 新增关于 Bilibili MCDN（TCP 8082）的拦截评估。建议在客户端层面规避（如 PC 端使用 WebRTC Control 扩展，移动端使用 PiliPlus 第三方客户端），而非单纯依赖网关拦截。
