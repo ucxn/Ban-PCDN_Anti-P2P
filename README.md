@@ -74,6 +74,10 @@ bilibili播放视频倍速可随意拖动 1x-4x 手动输入/滑块控制/微调
 
 *(可选) 进阶网维可参考 `对称型防火墙（进阶）.csv`，研究无状态防火墙下的回程放行逻辑与 TCP 8082 端口的拦截策略。*
 
+# 🔗 友情链接
+中兴路由器Web增强脚本：ZTE-Stat_Max
+
+[![中兴路由器增强脚本](https://img.shields.io/badge/GitHub-ZTE--Stat__Max-000000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/ucxn/ZTE-Stat_Max)
 ---
 
 ### <span style="color:#2C3E50;">🔄 更新日志 (2026.04.22 18H UTC+8)</span>
