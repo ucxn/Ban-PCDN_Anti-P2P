@@ -21,6 +21,10 @@
 </div>
 
 ---
+## 🔗 友情链接
+中兴路由器Web UI增强脚本
+
+[![ZTE-Stat_Max](https://img.shields.io/badge/篡改猴-ZTE--Stat__Max-00A381?style=for-the-badge&logo=tampermonkey&logoColor=white)](https://github.com/ucxn/ZTE-Stat_Max/)
 
 ### <span style="color:#D35400;">📖 核心理念：大道至简，力大砖飞</span>
 
@@ -73,11 +77,6 @@ bilibili播放视频倍速可随意拖动 1x-4x 手动输入/滑块控制/微调
 5. 提交并重启相关服务，享受不被白嫖的满血上行宽带！
 
 *(可选) 进阶网维可参考 `对称型防火墙（进阶）.csv`，研究无状态防火墙下的回程放行逻辑与 TCP 8082 端口的拦截策略。*
-
-# 🔗 友情链接
-中兴路由器Web UI增强脚本
-
-[![ZTE-Stat_Max](https://img.shields.io/badge/篡改猴-ZTE--Stat__Max-00A381?style=for-the-badge&logo=tampermonkey&logoColor=white)](https://github.com/ucxn/ZTE-Stat_Max/)
 
 ---
 
