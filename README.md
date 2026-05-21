@@ -1,7 +1,9 @@
 ## Ban-PCDN_Anti-P2P 
 ### Authored by 哥哥科技（Brother Tech）
 
-光复网路计画 (Cn-PCDN-Rules) 缓解流氓软件偷走你的宽带上行！本项目致力于搜集国内各大互联网厂商（如爱优腾、B站、抖音快手百度等）用于 P/M/HCDN  偷跑上行的域名、IP 和特征词。通过在网关、DNS 或防火墙层面进行拦截，尽量阻断恶意 P2P 流量，保障家庭核心网络的稳定，避免因异常上行被运营商限速或封号。方便宽带网络爱好者使用。
+光复网路计画 (Cn-PCDN-Rules) 缓解流氓软件偷走你的宽带上行！本项目致力于搜集国内各大互联网厂商（如爱优腾、B站、抖音快手百度等）用于 P/M/HCDN  偷跑上行的域名、IP 和特征词。通过在网关、DNS 或防火墙层面进行拦截，尽量阻断恶意 P2P 流量，保障家庭核心网络的稳定，避免因异常上行被运营商限速或封号。方便宽带网络爱好者使用。 <a href="https://b23.tv/BV12woQBwEh7" target="_blank">
+  <img src="https://img.shields.io/badge/Bilibili-观看演示视频-FF8EB3?style=for-the-badge&logo=bilibili&logoColor=white" height="72">
+</a>
 
 “Network Liberation Plan" is a specialized collection of rules designed to stop mainstream apps from "stealing" your home's upload bandwidth.
 
@@ -23,8 +25,7 @@
 
 ---
 ## 🔗 友情链接
-中兴路由器Web UI增强脚本
-
+中兴路由器Web UI增强脚本&emsp;&nbsp;
 [![ZTE-Stat_Max](https://img.shields.io/badge/篡改猴-ZTE--Stat__Max-00A381?style=for-the-badge&logo=tampermonkey&logoColor=white)](https://github.com/ucxn/ZTE-Stat_Max/)
 
 ### <span style="color:#D35400;">📖 核心理念：大道至简，力大砖飞</span>
