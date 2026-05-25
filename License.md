@@ -1,5 +1,5 @@
-© 2026 哥哥科技 | Licensed under CC BY-NC-SA 4.0
-> **Copyright (c) 2026 Brother Tech**
+Copyright (c) 2026 Brother Tech | Licensed under CC BY-NC-SA 4.0
+> **©2026 哥哥科技**
 > This work is licensed under the **[Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International Licence](https://creativecommons.org/licenses/by-nc-sa/4.0)**
 
 ---
