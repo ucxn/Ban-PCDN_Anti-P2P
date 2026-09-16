@@ -1,0 +1,219 @@
+id	name	pattern	note	font	bold	fill	font_rgb	fill_rgb	style_id
+1	p	pcdn	无需多言	黑	B	n	000000		17
+2	m	mcdn		黑	B	n	000000		17
+3	h	hcdn		黑	B	n	000000		17
+4	2	p2p		蓝	B	n	0070C0		21
+5	s	stun		蓝	B	n	0070C0		21
+6	bsc	bsccdn	流氓必屏蔽	黑	B	n	000000		17
+7	yf1	yfp2p	流氓必屏蔽	黑	B	n	000000		17
+8	yf2	yfcdn	流氓必屏蔽	黑	B	n	000000		17
+9	ppio	ppio	流氓必屏蔽	黑	B	n	000000		17
+10	ie	ietheivaicai	流氓必屏蔽	黑	B	n	000000		17
+11	wx	onething	流氓必屏蔽	黑	B	n	000000		17
+12	pkoplink	pkoplink	流氓必屏蔽	黑	B	n	000000		17
+13	p2	p2cdn	流氓必屏蔽	黑	B	n	000000		17
+14	qq	p2ptun		黑	N	n	000000		3
+15	s1	stun1		蓝	B	n	0070C0		21
+16	wxy	onethingpcs	最流氓P2P必屏蔽	黑	B	n	000000		17
+17	xy	xycdn	PCDN必屏蔽	黑	B	n	000000		17
+18	kuiniuca	kuiniuca		黑	B	n	000000		17
+19	msstatic	msstatic	疑似虎牙未见影响	红	B	n	FF0000		9
+20	yf3	yfcloud		黑	N	n	000000		3
+21	saxysec	saxysec	P2P必屏蔽	黑	B	n	000000		17
+22	yximgs	yximgs	影响快手短剧	黑	N	y	000000	FFFF00	33
+23	szbdyd	szbdyd	B站PCDN，屏蔽	黑	B	n	000000		17
+24	uhabo	uhabo	流氓P必屏蔽	黑	B	n	000000		17
+25	p3	p2pupdate	垃圾	黑	B	n	000000		17
+26	cdnnodedns	cdnnodedns		黑	B	n	000000		17
+27	p2perrorlog	p2perrorlog		黑	N	n	000000		3
+28	p2plog	p2plog		黑	N	n	000000		3
+29	dy1	stun1.douyucdn.cn		黑	B	n	000000		17
+30	dy	stun.douyucdn.cn		黑	B	n	000000		17
+31	gjfzpt	gjfzpt	垃圾	黑	B	n	000000		17
+32	dy2	p2pchunk		黑	B	n	000000		17
+33	dy3	dyp2p		黑	B	n	000000		17
+34	live	p2plive		黑	B	n	000000		17
+35	v	vodlive		红	N	n	FF0000		7
+36	iwan	iwan		黑	N	n	000000		3
+37	pgdt	gdt	疑似不影响Q音App	红	N	n	FF0000		7
+38	pdata	pdata		黑	B	n	000000		17
+39	cachecdn	cachecdn	垃圾	黑	B	n	000000		17
+40	meta-cdn	meta-cdn		黑	B	n	000000		17
+41	f	Fvid		红	N	n	FF0000		44
+42	valb	valb		红	N	n	FF0000		7
+43	valf	valf		红	N	n	FF0000		7
+44	valc	valc		红	N	n	FF0000		7
+45	pull-hs-f	pull-hs-f		黑	N	n	000000		3
+46	pullhsf	pullhsf		黑	N	n	000000		3
+47	pull-hs-f5-hot	pull-hs-f5-hot		黑	N	n	000000		3
+48	trackercdn	trackercdn		红	N	n	FF0000		7
+49	163	163jiasu		红	B	n	FF0000		9
+50	6	isure6		黑	N	n	000000		3
+51	p-cdn	p-cdn	垃圾	黑	B	n	000000		17
+52	pscdn	pscdn	垃圾	黑	B	n	000000		17
+53	scdn	scdn	影响WPS、小红书	白	N	n	FFFFFF		70
+54	v1d	v1d	太短慎用	黑	N	n	000000		3
+55	tp2p	tp2p	垃圾	黑	N	n	000000		3
+56	twns	twns	影响Q音手机	白	N	n	FFFFFF		70
+57	sd-gl	sd-gl		黑	N	n	000000		3
+58	xyp-n	xyp-n		黑	N	n	000000		3
+59	xinqiucc	xinqiucc	垃圾	黑	B	n	000000		17
+60	sdk1xyajs	sdk1xyajs	垃圾	黑	B	n	000000		17
+61	ac.dun	ac.dun	网易易盾	白	N	n	FFFFFF		70
+62	U	upload		蓝	B	n	0070C0		21
+63	jomodns	jomodns		黑	B	n	000000		17
+64	xmcdn	xmcdn		红	N	n	FF0000		7
+65	p2p-ali	p2p-ali		黑	N	n	000000		3
+66	p2pvod	p2pvod		黑	N	n	000000		3
+67	l	live	穿越火线、游戏、MS*	白	N	y	FFFFFF	FFFF00	67
+68	t	tracker		蓝	B	n	0070C0		21
+69	byteorge	byteorge		黑	N	n	000000		3
+70	fresco	fresco	潜在误伤	红	N	n	C00000		47
+71	snssdk	snssdk	？	黑	N	n	000000		84
+72	v-p2p	v-p2p	垃圾	黑	B	n	000000		17
+73	mnet	mnet	慎用	黑	N	n	000000		3
+74	volc	volc		红	N	n	FF0000		7
+75	amemv	amemv	抖音	红	N	n	FF0000		7
+76	bytescm	bytescm		黑	N	n	000000		3
+77	bytednsdoc	bytednsdoc		黑	N	n	000000		3
+78	bytegoofy	bytegoofy		黑	N	n	000000		3
+79	xycloud	xycloud		红	N	n	C00000		47
+80	xyp2p	xyp2p		黑	N	n	000000		3
+81	fcdn	fcdn	虎牙	黑	N	y	000000	FFFF00	15
+82	peer	peer		蓝	B	n	0070C0		21
+83	turn	turn		蓝	B	n	0070C0		21
+84	R	rtc		蓝	B	n	0070C0		21
+85	signal	signal		蓝	B	n	0070C0		21
+86	track	track		蓝	B	n	0070C0		21
+87	bytedns	bytedns		黑	N	n	000000		3
+88	nodesche	nodesche		黑	N	n	000000		3
+89	dnsdoc	dnsdoc		黑	N	n	000000		3
+90	pcv	pcv	未知慎用	黑	N	n	000000		3
+91	pcs	pcs	太短慎用	粉	N	n	FF0066		80
+92	ws00	ws00		黑	N	n	000000		3
+93	chunk	chunk		红	N	n	C00000		47
+94	xgp	xgp		黑	N	n	000000		3
+95	volcvideo	volcvideo		红	N	n	FF0000		7
+96	nodedns	nodedns		黑	N	n	000000		3
+97	kwaizt	kwaizt		黑	N	n	000000		36
+98	kspkg	kspkg		黑	B	n	000000		17
+99	qtp2p	qtp2p		黑	B	n	000000		17
+100	tcdn	tcdn		红	N	n	FF0000		7
+101	wsglw	wsglw		黑	B	n	000000		17
+102	p2p-log	p2p-log		黑	N	n	000000		3
+103	stun2	stun2		蓝	B	n	0070C0		21
+104	ndcpp	ndcpp		黑	N	n	000000		3
+105	dyp	starrydyn		黑	N	n	000000		3
+106	hsf	pullhsf		黑	N	n	000000		3
+107	hitv	hitv		红	N	n	FF0000		7
+108	tpa	tpa		蓝	B	n	0070C0		21
+109	NAT	NAT	疑似也影响nVIDIA驱动下载更新	蓝	N	n	0070C0		19
+110	iqy	71edge		黑	B	n	000000		17
+111	ayq	iqiyipic		黑	N	n	000000		3
+112	bvc	bvc	B站高能弹幕	白	N	y	E8E8E8	FFFF00	66
+113	wxs	wxs	可能是微信?	绿	B	n	00B050		25
+114	flive	flive		黑	N	n	000000		3
+115	pull-hs	pull-hs		黑	N	n	000000		3
+116	d.kugou	d.kugou		黑	B	n	000000		17
+117	isure6	isure		黑	B	n	000000		17
+118	rtmp	rtmp		黑	N	n	000000		3
+119	ixigua	ixigua	影响番茄系应用	黑	N	y	000000	FFFF00	15
+120	pull-flv	pull-flv		黑	N	n	000000		3
+121	flive.douyincdn.com	flive.douyincdn.com		黑	B	n	000000		17
+122	p2pupgrade	p2pupgrade		黑	B	n	000000		17
+123	cm.l	cm.l	慎用	黑	N	y	000000	FFFF00	15
+124	douyin	pull-hs-f5-hot.flive.douyincdn.com		红	N	n	FF0000		7
+125	sf3-ttcdn-tos.pstatp.com	pstatp	疑抖音/字节	黑	N	n	000000		84
+126	qpic	qpic	请勿开启！影响微Q图片	白	N	y	FFFFFF	FFFF00	62
+127	gtimg	gtimg		白	N	y	FFFFFF	FFFF00	62
+128	qlogo	qlogo	禁止屏蔽	白	B	y	FFFFFF	FFFF00	59
+129	bdstatic	bdstatic	百度	黑	B	n	000000		17
+130	bcebos	bcebos	AI说慎用	红	N	n	C00000		72
+131	gifshow	gifshow		红	N	n	FF0000		7
+132	upnp	upnp	建议屏蔽	红	B	n	FF0000		9
+133	dispatch	dispatch	AI说慎用	绿	N	n	00B050		81
+134	jdcloud	jdcloud	PCDN	黑	B	n	000000		17
+135	jcloud	jcloud		黑	B	n	000000		17
+136	pps	pps	误杀“apps”	白	N	y	FFFFFF	FFFF00	62
+137	m-p2p	m-p2p		黑	B	n	000000		17
+138	cdnbye	cdnbye		黑	B	n	000000		17
+139	peercdn	peercdn		黑	B	n	000000		17
+140	DHT	dht		蓝	N	n	0070C0		19
+141	ks-p2p	ks-p2p		黑	B	n	000000		17
+142	upyun	upyun	垃圾	黑	B	n	000000		17
+143	u-p2p	u-p2p		黑	B	n	000000		17
+144	7niu	qiniu	P2P CDN	黑	B	n	000000		17
+145	qiniu	7niu		黑	B	n	000000		17
+146	tlivecdn	tlivecdn		黑	N	n	000000		3
+147	wechat	vweixinthunder		黑	B	n	000000		17
+148	pangolin	pangolin		黑	N	n	000000		3
+149	27	hbwh		红	N	n	FF0000		7
+150	valbcf	val		黑	N	n	000000		3
+151	ym	umeng	垃圾	黑	B	n	000000		17
+152	bugly	bugly	诊断业务	黑	N	n	000000		3
+153	miaozhen	miaozhen	垃圾	黑	B	n	000000		17
+154	hxy	xyp		黑	N	n	000000		3
+155	nexusedgeio	nexusedgeio		黑	N	n	000000		3
+156	tianwenca	tianwenca	垃圾	黑	B	n	000000		17
+157	stun-a1	stun-a1		黑	N	n	000000		3
+158	qvb	qvb		黑	N	n	000000		3
+159	l	voip		红	B	n	FF0000		9
+160	xxpkg	xxpkg	垃圾	黑	B	n	000000		17
+161	vcloud	vcloud		黑	N	n	000000		3
+162	myqcloud	myqcloud		白	N	y	E8E8E8	FFFF00	66
+163	hw-edge	hw-edge		红	N	n	FF0000		7
+164	DoH	doh		红	B	n	FF0000		9
+165	DoT	dot		红	B	n	FF0000		9
+166	gslb	gslb	英伟达	红	N	y	FF0000	FFFF00	39
+167	httpdns	httpdns		红	B	n	FF0000		9
+168	ksyun	ksyun		黑	N	n	000000		36
+169	gitv	gitv		红	B	n	FF0000		9
+170	cosb coso1 2 bos	cos	B站网页	白	B	y	E8E8E8	FFFF00	65
+171	ks3bc2	ks3		红	N	n	FF0000		7
+172	kodob	kodo		黑	N	n	000000		3
+173	hwb	hwb		红	N	n	FF0000		7
+174	uphw	uphw	可能是正规的	红	B	n	FF0000		9
+175	js	js	禁止屏蔽	白	B	y	FFFFFF	FFFF00	59
+176	mountaintoys	mountaintoys		黑	B	n	000000		17
+177	xlive	xlive		黑	B	n	000000		17
+178	xigua	xiguaimg		红	N	n	C00000		72
+179	bytetcc	tcc		红	N	n	C00000		72
+180	lf3	lf3		黑	N	n	000000		3
+181	pili.com.cn	pili		黑	N	n	000000		3
+182	push	push-r		红	B	n	FF0000		9
+183	cast	webcast	字节/红果或通用\n暂未控制变量复测	红	N	y	FF0000	FFFF00	39
+184	living	living		红	B	n	FF0000		9
+185	pull	pull	疑似有用	红	B	n	FF0000		9
+186	tpstelemetry	tpstelemetry	建议用长版，防误伤	黑	N	n	000000	FFFFFF	82
+187	AD	doubleclick	广告	黑	B	n	000000		17
+188	ptqy	ptqy		黑	N	n	000000		3
+189	ads	ads		红	N	n	FF0000		7
+190	vegslb	vegslb		黑	N	n	000000		3
+191	lbv	lbv		黑	N	n	000000		3
+192	ad	midroll		黑	N	n	000000		3
+193	Ad	pagead		黑	N	n	000000		3
+194	BOS	byteoversea		黑	N	n	000000		3
+195	p2p-v	p2p-snssdk		黑	B	n	000000		17
+196	n	ncdn	流氓软件必屏蔽	黑	B	n	000000		17
+197	r	report		白	N	n	FFFFFF		68
+198	klcdn	vcdn		黑	N	n	000000		3
+199	sandai	sandai		黑	N	n	000000		3
+200	ws	wscloud		黑	N	n	000000		3
+201	x	xcdn		黑	N	n	000000		3
+202	hdns	hdns		黑	N	n	000000		3
+203	cdndns	cdndns		黑	N	n	000000		3
+204	d-pxy	pxy		黑	N	n	000000		3
+205	bcache	bcache		黑	N	n	000000		3
+206	mcs	msc.snssdk.com	或许影响隐私	红	N	n	C00000		72
+207	ks-sh	ks-sh		黑	N	n	000000		3
+208	bdxiguavod	bdxiguavod		黑	N	n	000000		3
+209	yfscdn	yfscdn		黑	N	n	000000		3
+210	query.dcdn	dcdn		黑	N	n	000000		3
+211	gdfs	gdfs		黑	N	n	000000		3
+212	dataflow	dataflow		黑	N	n	000000		3
+213	dm	dm.snssdk.com		黑	N	n	000000		3
+214	vccdn-tos	vccdn		黑	N	n	000000		3
+215	yfdts	yfdts		黑	N	n	000000		3
+216	v4.kwaicdn.com	v4.kwaicdn		黑	N	n	000000		3
+217	dig.bdurl.net	bdurl	广告、双刃剑	红	N	n	FF0000		7
+218	awemeughun	awemeughun	应该只是广告	黑	N	n	000000		3

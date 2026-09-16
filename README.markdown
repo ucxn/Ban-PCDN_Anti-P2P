@@ -1,5 +1,5 @@
 ## Ban-PCDN_Anti-P2P 
-### Authored by 哥哥科技（Brother Tech）
+### Authored by 哥哥科技（Bro-Tech）
 
 光复网路计画 (Cn-PCDN-Rules) 缓解流氓软件偷走你的宽带上行！本项目致力于搜集国内各大互联网厂商（如爱优腾、B站、抖音快手百度等）用于 P/M/HCDN  偷跑上行的域名、IP 和特征词。通过在网关、DNS 或防火墙层面进行拦截，尽量阻断恶意 P2P 流量，保障家庭核心网络的稳定，避免因异常上行被运营商限速或封号。方便宽带网络爱好者使用。 <a href="https://b23.tv/BV12woQBwEh7" target="_blank">
   <img src="https://img.shields.io/badge/Bilibili-观看演示视频-FF8EB3?style=for-the-badge&logo=bilibili&logoColor=white" height="72">
@@ -19,7 +19,7 @@
     &nbsp;|&nbsp; 
     QQ 交流群：<a href="https://qun.qq.com/universal-share/share?ac=1&authKey=%2FWJ%2F4NS6lNp1cyU2a1kUo%2F%2FEfq8vD6q7SXUux2UosjZ%2BialqZVNe%2Bk3w1YoOUR3b&busi_data=eyJncm91cENvZGUiOiI2ODA0NjQzNjUiLCJ0b2tlbiI6IkI5ZHVYaHJnSGlZZEpzSkRhamdOZFZaNy9aZFJ1L1JwNGpZYWNJWTJJRThGYjBoVjN6RUxhUkcvV0h4eHBwV2siLCJ1aW4iOiIxNTIwMDg1MjQ5In0%3D&data=iHLL1DGOGIhddoSRjGmI9D2bMbNLa4vwx5YfZQAzvPM0sAuYo67cPN4265_UAPSpbgqWLVl8vmWBZVREf_Qg-g&svctype=4&tempid=h5_group_info" style="color:#1296db; text-decoration:none;">680464365</a> 
     &nbsp;|&nbsp; 
-    最新版本：v4.2.3 (2026.05.30)
+    最新版本：v4.4 (2026.09.16)
   </p>
 </div>
 
@@ -32,7 +32,7 @@
 
 在这个万物皆可 PCDN（端到端内容分发网络）、连你的智能电视和后台驻留软件都在偷偷上传数据吸血的时代，我们必须夺回属于自己的网络带宽。本项目的核心目的，就是通过<span style="color:#27AE60; font-weight:bold;">最底层、最纯粹的网络层与 DNS 层拦截</span>，打击那些潜伏在暗处的恶性 P2P/PCDN 偷跑的死流氓。
 
-作为有线网络原教旨主义倡导者，我们坚决抵制为了屏蔽几个域名，部署基于 Arm 架构的“软路由”或繁冗的应用层插件、小主机或各类花里胡哨的插件。**真正的极客，追求的是硬路由的 NPU 线速转发！** 用最暴力的防火墙策略，守护最纯净的 Open Internet。不搞暴力无脑流控QoS，把算力留给真正的业务，这才是美式“量大管饱”。
+作为有线网络原教旨主义倡导者，我们坚决抵制为了屏蔽几个域名，部署基于 Arm 架构的“软漏由”或繁冗的应用层插件、小主机或各类花里胡哨的插件。**真正的极客，追求的是硬路由的 NPU 线速转发！** 用最暴力的防火墙策略，守护最纯净的 Open Internet。不搞暴力无脑流控QoS，把算力留给真正的业务，这才是美式“量大管饱”。
 
 ---
 
@@ -79,12 +79,12 @@ bilibili播放视频倍速可随意拖动 1x-4x 手动输入/滑块控制/微调
 5. 提交并重启相关服务，享受不被白嫖的满血上行宽带！
 
 *(可选) 进阶网维可参考 `对称型防火墙（进阶）.csv`，研究无状态防火墙下的回程放行逻辑与 TCP 8082 端口的拦截策略。*
-**重要：**中兴路由器是无状态的 NPU 静态 ACL，不过目前已经可以选择入接口和出接口，并非不分方向。但是出站连接不代表自动获得入站连接的资格。
+**重要：** 中兴路由器是无状态的 NPU 静态 ACL，不过目前已经可以选择入接口和出接口，并非不分方向。但是出站连接不代表自动获得入站连接的资格。
 ---
 
-### <span style="color:#2C3E50;">🔄 更新日志 (2026.04.22 18H UTC+8)</span>
+### <span style="color:#2C3E50;">🔄 更新日志 (2026.09.16 23H UTC+7.621)</span>
 
-* **第 19 次修正**：根据群友与长辈反馈，基于多端设备测试反馈，回调了上个版本中过于激进的自用拦截策略。
+* **第 20 次修正**：根据群友与长辈反馈，基于多端设备测试反馈，回调了上个版本中过于激进的自用拦截策略。
 * 通过 PCAPdroid 对移动端应用进行了重新嗅探抓包，大幅降低了常规软件的网络卡顿率。
 * 优化了分类色彩逻辑：目前所有激进部分均已用黄色标出。
 * 新增关于 Bilibili MCDN（TCP 8082）的拦截评估。建议在客户端层面规避（如 PC 端使用 WebRTC Control 扩展，移动端使用 PiliPlus 第三方客户端），而非单纯依赖网关拦截。

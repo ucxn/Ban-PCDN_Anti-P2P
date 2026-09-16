@@ -1,0 +1,164 @@
+以下来源于网友 供参考
+
+! ============================================================
+! 自定义过滤清单 - 综合优化版
+! 包含：PCDN 抑制、视频去广告、基础白名单放行
+! 更新时间: 2026-04-10 v2
+! --- 列表来源(https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/refs/heads/master/discretion/pcdn.txt) ---
+! --- 列表来源[哥哥科技](https://space.bilibili.com/501430041) ---
+https://www.nodeseek.com/post-387541-1
+! ============================================================
+! 自定义过滤清单 - 综合优化版 (全量合并去重)
+! 功能：PCDN 抑制、视频/网页去广告、基础功能白名单
+! ============================================================
+! ---------- [1. 白名单放行：确保核心业务不误杀] ----------
+! 基础服务与系统
+@@||g.live.com^$important
+@@||ipcdn.apple.com^$important
+@@||mask.apple-dns.net^$important
+@@||deepseek.com^$important
+@@||mask.icloud.com^$important
+! 电商与支付
+@@||s.click.taobao.com^$important
+@@||ipassport.ele.me^$important
+@@||wl.jd.com^$important
+@@||jd.com^$important
+@@||360buyimg*^$important
+@@||*meituan.net^$important
+! 腾讯/微信核心 (防止图片加载失败)
+@@||gtimg.com^$important
+@@||qpic.cn^$important
+@@||qlogo.cn^$important
+@@||aedns.weixin.qq.com^$important
+@@||weixin.qq.com^$important
+@@||qq.com^$important
+@@||qlogo.cn^$important
+! 字节/抖音核心 (防止封面/头像白块)
+@@||pstatp.com^$important
+@@||snssdk.com^$important
+! 百度/金山/小红书 (防止贴吧/WPS/小红书崩溃)
+@@||bdstatic.com^$important
+@@||ksyuncdn.com^$important
+@@||xiaohongshu.com^$important
+@@||*.wpscdn.cn^$important
+@@||*.wpscdn.com^$important
+@@||*.xhscdn.com^$important
+! ---------- [2. 关键词抑制：广谱拦截 PCDN 厂商] ----------
+||*pcdn*^
+||*mcdn*^
+||*hcdn*^
+||*ppio*^
+||*onething*^
+||*pkoplink*^
+||*p2cdn*^
+||*p2ptun*^
+||*xycdn*^
+||*xycloud*^
+||*xyp2p*^
+||*kuiniuca*^
+||*yfcloud*^
+||*yfp2p*^
+||*yfcdn*^
+||*szbdyd*^
+||*uhabo*^
+||*v-p2p*^
+||*m-p2p*^
+||*peercdn*^
+||*cdnbye*^
+||*nexusedgeio*^
+||*tianwenca*^
+||*mountaintoys*^
+||*bsccdn*^
+! ---------- [3. 精准打击：视频平台 P2P 调度] ----------
+! 腾讯视频
+||hcdn.video.qq.com^
+||pcdn.video.qq.com^
+||vodlive.qq.com^
+||iwan-s.video.qq.com^
+||tpstelemetry.tencent.com^
+||p2p.qq.com^
+! 爱奇艺
+||hcdn.qiyi.com^
+||pdata.video.qiyi.com^
+||cachecdn.v.iqiyi.com^
+||meta-cdn.video.iq.com^
+||tpa-hcdn.iqiyi.com^
+||data6.video.iqiyi.com^
+! 优酷/土豆
+||atm.youku.com^
+||fvid.atm.youku.com^
+||html.atm.youku.com^
+||valb.atm.youku.com^
+||valf.atm.youku.com^
+||static.atm.youku.com^
+||valc.atm.youku.com^
+! 哔哩哔哩
+||mcdn.bilivideo.com^
+||mcdn.bilivideo.cn^
+||bvc.bilivideo.com^
+! 字节/西瓜/抖音 (去重后保留核心)
+||pull-rtmp-l11.ixigua.com^
+||push-rtmp-l1.ixigua.com^
+||pull-hs-f5-hot.flive.douyincdn.com^
+||flive.douyincdn.com^
+||p2p-v.byteoversea.com^
+||*volcvideo*^
+||*lf3-p2p*^
+||*p2p-snssdk*^
+! 斗鱼/虎牙/芒果
+||p2p.douyucdn.cn^
+||*.douyucdn.cn^$domain=~douyu.com
+||p2p.huya.com^
+||stun.hitv.com^
+! ---------- [4. 音乐与下载抑制] ----------
+||trackercdn.kugou.com^
+||mobiletrackercdn.kugou.com^
+||d.kugou.com^
+||sf.163.com^
+||isure6.stream.qqmusic.qq.com^
+||p-cdn.com^
+||pscdn.co^
+||p.scdn.co^
+! ---------- [5. 协议、日志与 STUN (PCDN 命门)] ----------
+||*p2pupdate*^
+||*p2pupgrade*^
+||*p2perrorlog*^
+||*p2plog*^
+||*p2p-log*^
+||*p2pchunk*^
+||*p2plive*^
+||*cdnnodedns*^
+||*mcdn*gslb*^
+||*p2p*gslb*^
+||*stun*^
+! ---------- [6. 广告拦截与追踪] ----------
+! YouTube 中插
+||static.doubleclick.net^$domain=youtube.com
+||youtube.com/get_midroll_
+! 爱奇艺 TV 广告上报
+||t7z.cupid.ptqy.gitv.tv^$important
+! 网页广告与追踪
+/googleads.$~script,domain=~googleads.github.io
+/pagead/lvz?
+||google.com/pagead/
+||gdt.qq.com^
+||cm.l.qq.com^
+
+! ---------- [7.网友的最新补充] ----------
+||*.kwaicdn.*
+||cdndns.kwd.inkuai.com
+||*.ecukwai.com
+||p5*.*kwai.com
+||p2p*.xxpkg.com
+||*.xyydedge.*
+||*.oppass.*
+||*.wxlivecdn.*
+||*.willcdn.*
+||*.xxpkg.*
+||*.ksapisrv.*
+||*.kwimgs.*
+||*.hongboluo.*
+||*.qjsalia.*
+||*.ndcimgs.*
+||*.xyydnode.*
+||*.smtcdns.* !抖音pcdn
