@@ -25,8 +25,8 @@
 
 ---
 ## 🔗 友情链接
-中兴路由器Web UI增强脚本&emsp;&nbsp;
-[![ZTE-Stat_Max](https://img.shields.io/badge/篡改猴-ZTE--Stat__Max-00A381?style=for-the-badge&logo=tampermonkey&logoColor=white)](https://github.com/ucxn/ZTE-Stat_Max/)
+***多品牌路由器Web UI增强插件***&emsp;&nbsp;
+[![ZTE-Stat_Max](https://img.shields.io/badge/篡改猴-ZTE--Stat__Max-00A381?style=for-the-badge&logo=tampermonkey&logoColor=white)](https://github.com/ucxn/Bro-stat)
 
 ### <span style="color:#D35400;">📖 核心理念：大道至简，力大砖飞</span>
 
