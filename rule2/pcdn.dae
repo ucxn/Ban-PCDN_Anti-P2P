@@ -1,0 +1,58 @@
+# ============================================================
+# 光复网路计划 · dae / daed 路由规则（PCDN 过滤）
+# 规则整理自 recomvery566j 在 Issue #7 的投稿，关键词来自本仓库的规则表
+#
+# 适用：OpenWrt 等 Linux 路由器上的 dae（或带面板的 daed），需要内核支持 eBPF。
+#       开着硬件 NAT 加速时流量不经过内核，规则不生效。
+#
+# 用法：
+#   daed：面板 → Routing，把本文件全部内容粘贴进去，保存并重新加载。
+#   dae ：粘贴到 config.dae 的 routing { } 大括号里。
+#   把下面所有的 aa:bb:cc:dd:ee:01 / aa:bb:cc:dd:ee:02 换成要管控设备的 MAC
+#   （电视盒子、投影仪等），多台设备照格式往里加，其余设备不受影响。
+#
+# 注意：
+#   1. dae 的 DNS 模块必须开启。按域名拦截依赖 dae 转发 DNS 时记下的
+#      「IP → 域名」对应关系；DNS 交给 dnsmasq 独占的话，域名规则会悄悄失效。
+#   2. 本文件不走代理，全部直连，dns { } 里的上游请填国内能直连的 DNS。
+#   3. 规则从上往下匹配，命中第一条就停，顺序不要打乱。
+# ============================================================
+
+# ---------- 系统与内网 ----------
+pname(NetworkManager, systemd-resolved, dnsmasq) -> must_direct
+dip(geoip:private) -> direct
+dip(224.0.0.0/3, 'ff00::/8') -> direct
+
+# ---------- 防误伤 ----------
+# 苹果的 ipcdn.apple.com 含「pcdn」字样，会被下面的关键词误拦
+mac('aa:bb:cc:dd:ee:01', 'aa:bb:cc:dd:ee:02') && domain(suffix:ipcdn.apple.com) -> direct
+
+# ---------- 1. PCDN 域名拦截（必须在端口放行之前）----------
+# 1.1 高置信：PCDN / P2P 厂商与协议关键词
+mac('aa:bb:cc:dd:ee:01', 'aa:bb:cc:dd:ee:02') && domain(keyword:pcdn, keyword:mcdn, keyword:hcdn, keyword:ppio, keyword:onething, keyword:pkoplink, keyword:p2cdn, keyword:p2ptun, keyword:xycdn, keyword:xyp2p, keyword:kuiniuca, keyword:yfcloud, keyword:yfp2p, keyword:yfcdn, keyword:szbdyd, keyword:uhabo, keyword:v-p2p, keyword:m-p2p, keyword:peercdn, keyword:cdnbye, keyword:nexusedgeio, keyword:tianwenca, keyword:mountaintoys, keyword:bsccdn, keyword:lf3-p2p, keyword:p2p-snssdk, keyword:p2pupdate, keyword:p2pupgrade, keyword:p2perrorlog, keyword:p2plog, keyword:p2p-log, keyword:p2pchunk, keyword:p2plive, keyword:cdnnodedns, keyword:xxpkg, regex:'p2p.*gslb') -> block
+
+# 1.2 各视频、直播、音乐平台的 P2P 调度
+mac('aa:bb:cc:dd:ee:01', 'aa:bb:cc:dd:ee:02') && domain(suffix:hcdn.video.qq.com, suffix:pcdn.video.qq.com, suffix:vodlive.qq.com, suffix:iwan-s.video.qq.com, suffix:tpstelemetry.tencent.com, suffix:p2p.qq.com, suffix:hcdn.qiyi.com, suffix:pdata.video.qiyi.com, suffix:cachecdn.v.iqiyi.com, suffix:meta-cdn.video.iq.com, suffix:tpa-hcdn.iqiyi.com, suffix:data6.video.iqiyi.com, suffix:atm.youku.com, suffix:mcdn.bilivideo.com, suffix:mcdn.bilivideo.cn, suffix:bvc.bilivideo.com, suffix:pull-rtmp-l11.ixigua.com, suffix:push-rtmp-l1.ixigua.com, suffix:flive.douyincdn.com, suffix:p2p-v.byteoversea.com, suffix:p2p.douyucdn.cn, suffix:p2p.huya.com, suffix:stun.hitv.com, suffix:trackercdn.kugou.com, suffix:mobiletrackercdn.kugou.com, suffix:d.kugou.com, suffix:sf.163.com, suffix:isure6.stream.qqmusic.qq.com, suffix:p-cdn.com, suffix:pscdn.co, suffix:p.scdn.co) -> block
+
+# 1.3 网友补充：快手、抖音等新出现的 PCDN 域名
+mac('aa:bb:cc:dd:ee:01', 'aa:bb:cc:dd:ee:02') && domain(keyword:xyydedge, keyword:oppass, keyword:wxlivecdn, keyword:willcdn, keyword:ksapisrv, keyword:hongboluo, keyword:qjsalia, keyword:ndcimgs, keyword:xyydnode, keyword:smtcdns, suffix:cdndns.kwd.inkuai.com, suffix:ecukwai.com) -> block
+
+# 1.4 激进：可能误伤正常播放、图片或语音通话。出问题先删这一行
+#     kwaicdn、kwimgs：快手 CDN 与图片；volcvideo、xycloud：火山引擎等；stun：语音视频通话打洞
+mac('aa:bb:cc:dd:ee:01', 'aa:bb:cc:dd:ee:02') && domain(keyword:kwaicdn, keyword:kwimgs, keyword:volcvideo, keyword:xycloud, keyword:stun) -> block
+
+# ---------- 2. 受管设备必需流量放行 ----------
+# DNS / DHCP / DHCPv6 / NTP / SSDP / mDNS（投屏和设备发现）
+mac('aa:bb:cc:dd:ee:01', 'aa:bb:cc:dd:ee:02') && dport(53, 67, 68, 123, 546, 547, 1900, 5353) -> direct
+# 网页与视频，TCP 和 UDP 都放（UDP 443 是 QUIC）
+mac('aa:bb:cc:dd:ee:01', 'aa:bb:cc:dd:ee:02') && dport(80, 443) -> direct
+# 能打开页面但视频加载失败时，去掉下一行开头的 # 号
+# mac('aa:bb:cc:dd:ee:01', 'aa:bb:cc:dd:ee:02') && dport(8000, 8080, 8443) -> direct
+
+# ---------- 3. 受管设备其余出站全部丢弃 ----------
+# P2P 上传多走随机端口，这一行让它换到哪个端口都出不去。
+# 设备有正常业务走其他端口（游戏、IPTV 等）时，删掉这一行，只保留上面的域名拦截。
+mac('aa:bb:cc:dd:ee:01', 'aa:bb:cc:dd:ee:02') -> block
+
+# ---------- 4. 其他设备 ----------
+fallback: direct
